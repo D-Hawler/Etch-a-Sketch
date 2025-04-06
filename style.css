@@ -7,6 +7,8 @@
 }
 
 * {
+    font-family: Arial, Helvetica, sans-serif;
+
     padding: 0;
     margin: 0;
     box-sizing: content-box;
@@ -41,22 +43,22 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-#main, #menu, .color-panel, .color-cube {
+#main, #menu, .colorPanel, .colorCube, #pensilMode, #eraserМode {
     border: 1px solid rgb(0, 0, 0);
 }
 
-.color-panel {
+.colorPanel {
     margin: 20px;
     padding: 10px;
 }
 
-.color-choice {
+.colorChoice {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.color-cube {
+.colorCube {
     width: 100px;
     height: 100px;
 
@@ -66,4 +68,22 @@ body {
 .cube {
     flex: 0 0 calc(100%  / var(--size-box));
     height: calc(100% / var(--size-box));
+}
+
+#drawMode {
+    padding: 10px;
+    margin: 20px;
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#pensilMode, #eraserМode {
+    font-weight: 900;
+    padding: 10px 30px;
+}
+
+#plug > h1 {
+    padding: 20px;
 }

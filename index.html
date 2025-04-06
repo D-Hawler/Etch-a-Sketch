@@ -10,9 +10,9 @@
 <body>
     <div id="menu">
         <h1>Setting</h1>
-        <div class="color-panel">
+        <div class="colorPanel">
             <h2>Color:</h2>
-            <div class="color-choice">
+            <div class="colorChoice">
                 <div class="colors">
                     <p id="textForRed">Red 0</p>
                     <input type="range" id="red" min="0" max="255" value="0" step="1"><br>
@@ -21,11 +21,21 @@
                     <p id="textForBlue">Blue 0</p>
                     <input type="range" id="blue" min="0" max="255" value="0" step="1"><br>
                 </div>
-                <div class="color-cube"></div>
+                <div class="colorCube"></div>
             </div>
+        </div>
+        <div id="drawMode">
+            <button id="pensilMode">&#x270E;</button>
+            <button id="eraserМode">&#9746;</button>
+        </div>
+        <div id="drawMode">
+            <h2 id="textForGrid">Grid: 16x16</h2>
+            <input type="range" id="grid" min="2" max="50" value="16" step="1">
         </div>
     </div>
     <div id="main"></div>
-    <div id="plug"></div>
+    <div id="plug">
+        <h1>To draw, hold down LKM and move the mouse over the square in the center.</h1>
+    </div>
 </body>
 </html>
