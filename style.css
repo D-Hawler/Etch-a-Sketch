@@ -1,3 +1,11 @@
+:root {
+    --size-box: 16;
+
+    --red: 0;
+    --green: 0;
+    --blue: 0;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -11,21 +19,51 @@ html, body, #main {
 
 body {
     display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
 
-#main {
-    border: 1px solid rgb(0, 0, 0);
+#menu, #plug {
+    width: 400px;
+    height: 800px;
+}
+#menu > h1 {
+    padding: 10px;
+    font-size: 42px;
+    text-align: center;
+}
 
+#main {
     width: 800px;
     height: 800px;
 
     display: flex;
     flex-wrap: wrap;
 }
+#main, #menu, .color-panel, .color-cube {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.color-panel {
+    margin: 20px;
+    padding: 10px;
+}
+
+.color-choice {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.color-cube {
+    width: 100px;
+    height: 100px;
+
+    background-color: rgb(var(--red), var(--green), var(--blue));
+}
 
 .cube {
-    flex: 0 0 calc(100%  / 16);
-    height: calc(100% / 16);
+    flex: 0 0 calc(100%  / var(--size-box));
+    height: calc(100% / var(--size-box));
 }

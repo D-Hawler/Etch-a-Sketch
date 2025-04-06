@@ -8,6 +8,24 @@
     <title>Etch-a-Sketch</title>
 </head>
 <body>
+    <div id="menu">
+        <h1>Setting</h1>
+        <div class="color-panel">
+            <h2>Color:</h2>
+            <div class="color-choice">
+                <div class="colors">
+                    <p id="textForRed">Red 0</p>
+                    <input type="range" id="red" min="0" max="255" value="0" step="1"><br>
+                    <p id="textForGreen">Green 0</p>
+                    <input type="range" id="green" min="0" max="255" value="0" step="1"><br>
+                    <p id="textForBlue">Blue 0</p>
+                    <input type="range" id="blue" min="0" max="255" value="0" step="1"><br>
+                </div>
+                <div class="color-cube"></div>
+            </div>
+        </div>
+    </div>
     <div id="main"></div>
+    <div id="plug"></div>
 </body>
 </html>
